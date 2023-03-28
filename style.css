@@ -322,20 +322,19 @@ body {
   right: 0;
   box-shadow: 5px 5px 5px rgba(153, 155, 168, 0.15);
 }
-/* .slider-btn{
-  display: flex;
-  justify-content: end;
-  margin-top: 50px;
-} */
 #FindCarSlider{
   margin: 100px 0;
 }
 
 .FindcarHeader{
+  width: 98%;
+  height: 60px;
+  margin: 0px auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: end;
-  margin: 100px 0;
+  padding: 20px;
+  margin-bottom: 70px;
 }
 .findCar{
   font-family: 'Inter';
@@ -345,6 +344,15 @@ font-size: 28px;
 line-height: 36px;
 letter-spacing: -0.1px;
 color: #0D0A19;
+}
+.slider-btn{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #9A9EA7;
 }
 .slider-btn a{
   text-decoration: none;
@@ -357,12 +365,11 @@ line-height: 24px;
 text-align: right;
 color: #9A9EA7;
 }
-.slider-btn span{
-  margin-left: 10px;
+
+.slider-btn img{
   background: #F5F6F7;
 border-radius: 10px;
-padding: 10px 15px;
-cursor: pointer;
+padding: 10px !important;
 }
 .ProDetails p{
 
@@ -377,21 +384,37 @@ color: #0D0A19;
 }
 .product-group{
   display: flex;
+  overflow: hidden;
+
 }
 
 .product{
   position: relative;
-  left: 
+  left: 0;
+  right: 0;
   min-width: 24%;
   margin: 0 20px 50px 0;
-  border-radius: 20px;
   transition: 0.5s;
+  /* border: 2px solid #ddd; */
+  height: 40svh;
+}
+.product img{
+  width: 240px;
+  height: 140px;
 }
 /* ! section 5 start */
 .section5 {
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
+.heading-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  word-wrap: break-word;
+  margin-bottom: 40px;
+
+}
 .section5 h3 {
   font-family: "inter";
   font-size: 28px;
@@ -519,4 +542,14 @@ color: #9A9EA7;
     margin-top: 20px;
   }
   /* ! section 2 end */
+
+  .product{
+    min-width: 48%;
+    margin-right: 70px;
+
+  }
+
+  .section5{
+    margin-left: 50px;
+  }
 }
